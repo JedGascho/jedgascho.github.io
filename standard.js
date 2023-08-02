@@ -3,7 +3,7 @@ var tmpo = 0;
 var i = 1;
 var p = true;
 function myLoop() {
-    console.log(parseInt(rangeValue.innerText));
+    //console.log(parseInt(rangeValue.innerText));
     setTimeout(function() {
         if (p == true){
             audio.play()
