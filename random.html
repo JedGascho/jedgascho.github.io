@@ -7,19 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
+
+<!--
+    fastest speed
+    lowest speed
+    rate of change 
+-->
 <body>
-    
-    <!-- <div>
-        <label for="quantity">starting tempo:</label>
-        <input type="number" id="quantity" name="startingTempo">
-    </div>
-    <div>
-        <label for="quantity">ending tempo:</label>
-        <input type="number" id="quantity" name="endingTempo"> -->
-    <!-- </div> -->
     <input type="checkbox" id="active">
     <label for="active" class="menu-btn"><span></span></label>
     <label for="active" class="close"></label>
@@ -34,20 +31,24 @@
         </ul>
     </div>
     <div class="center">
-        <button class="button-30" onclick="play_sound()">start</button>
-        <button class="button-30" onclick="stop_sound()">stop</button>
-    </div>
-    
-    <!-- <div class="center">
-        <p id="rangeValue">100</p>
-    </div> -->
-    <div class="slider">
-        <input type="range" min="30" max="250" value="100" oninput="rangeValue.innerText = this.value">
+        <div class="center">
+            <button class="button-30" onclick="play_sound()">start</button>
+            <button class="button-30" onclick="stop_sound()">stop</button>
+        </div>
         <div>
-            <p id="rangeValue" class="bpm">100</p>
-            <p class="bpm">BPM</p>
+            <label for="quantity">Fastest tempo:</label>
+            <input type="number" id="fastestTempo">
+            
+        </div>
+        <div>
+            <label for="quantity">Slowest tempo:</label>
+            <input type="number" id="slowestTempo">
+        </div>
+        <div>
+            <label for="quantity">Rate of Change:</label>
+            <input type="number" id="rateofchange">
         </div>
     </div>
-    <script src="standard.js"></script>
+    <script src="random.js"></script>
 </body>
 </html>

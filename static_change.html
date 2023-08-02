@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="center">   
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><span></span></label>
+        <label for="active" class="close"></label>
+        <div class="wrapper">
+            <ul>
+                <br>
+                <br>
+                <br>
+                <li><a href="standard.html">Standard</a></li>
+                <li><a href="static_change.html">Change</a></li>
+                <li><a href="random.html">Random</a></li>
+            </ul>
+        </div>
+        <div>
+            <button class="button-30" id="start" onclick="play_sound()">start</button>
+            <button class="button-30" id="stop" onclick="stop_sound()">stop</button>
+        </div>
+        <div>
+            <label for="quantity">starting tempo:</label>
+            <input type="number" id="startingTempo">
+        </div>
+        <div>
+            <label for="quantity">ending tempo:</label>
+            <input type="number" id="endingTempo">
+        </div>
+        <div>
+            <label for="quantity">how many clicks until final tempo:</label>
+            <input type="number" id="rateofchange">
+        </div>
+
+        <!-- <a href="index.html">Static</a> -->
+        <script src="static_change.js"></script>
+    </div>
+</body>
+</html>
