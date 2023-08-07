@@ -15,9 +15,9 @@ align-items: center;
 box-shadow: 0px 15px 40px #7E6D5766;
 }
 .slider p {
-font-size: 26px;
-font-weight: 600;
-font-family: Open Sans;
+font-size: 24px;
+font-weight: 200;
+font-family: Candara;
 padding-left: 30px;
 color: black;
 }
@@ -90,9 +90,10 @@ transform: translateY(2px);
 
 .center {
     text-align: center;
-    }
+}
+
 .bpm {
-    font-size: 2px;
+    font-size:2px;
 }
 
 
