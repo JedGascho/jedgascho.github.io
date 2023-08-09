@@ -37,7 +37,7 @@ function stop_sound(){
 function stop_start(){
     if (is_playing == true){
         stop_sound()
-        document.getElementById("stop_start_btn").innerHTML = "⏵";
+        document.getElementById("stop_start_btn").innerHTML = "▶️";
     } else {
         play_sound()
         document.getElementById("stop_start_btn").innerHTML = "⏸";
